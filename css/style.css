@@ -27,10 +27,14 @@ body{
 }
 .primary-desc{
     color: #534C64;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 400;
     line-height: 25px;
     margin: 20px 0;
+}
+.primary-games-title{
+    color: #0B0223;
+    font-size: 2.3rem;
 }
 /* single-text-color */
 .single-text-color{
@@ -148,13 +152,30 @@ nav{
     text-align: right;
 }
 .feature-title{
-    font-size: 2.5rem;
+    font-size: 2.3rem;
 }
 .feature-some-text{
     display: block;
     color: #534C64;
     font-size: 1rem;
     font-weight: 700;
+}
+/* blogGames-section style use here */
+.blogGames-section{
+    padding: 55px 180px 35px;
+}
+.blog-head{
+    text-align: center;
+}
+.blog-image-area{
+    display: flex;
+    gap:23px;
+}
+.blog-item{
+    width: 230px;
+}
+.blog-photo{
+    width: 230px;
 }
 /* gamesPlay-section style use here */
 .gamesPlay-section{
@@ -166,10 +187,6 @@ nav{
 .gamesPlay-content{
     width: 360px;
     text-align: right;
-}
-.games-title{
-    color: #0B0223;
-    font-size: 2.5rem;
 }
 .gamesPlay-image-area{
     position: relative;
@@ -257,8 +274,8 @@ footer{
     display:grid;
     grid-template-columns: repeat(4,50px);
     justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 25px;
+    margin-bottom: 35px;
     gap: 5px;
 }
 .icon-list > li{
@@ -317,23 +334,41 @@ footer{
         text-align: center;
         width: 350px;
     }
+    /* blogGames-section style use here */
+    .blogGames-section{
+        padding: 0 25px;
+    }
+    .blog-image-area{
+        flex-direction: column;
+    }
+    .blog-item {
+        width: 290px;
+        margin: 0 auto;
+    }
+    .blog-photo{
+        width: 290px;
+    }
     /* gamesPlay-section here */
     .gamesPlay-section{
         flex-direction: column;
-        padding: 55px 28px 90px;
+        padding: 55px 28px 65px;
         gap: 55px;
     }
+    .gamesPlay-image-area{
+        padding: 0 50px;
+    }
     .gamesPlay-content{
+        width: 390px;
         text-align: center;
     }
     .games-img {
-        width: 300px;
-        height: 550px;
+        width: 100%;
+        height: auto;
     }
     .image-badge img {
-        width: 150px;
-        top: 415px;
-        left: -49px;
+        width: 107px;
+        top: 183px;
+        left: -1px;
     }
     /* team-section style use here */
     .team-section{
@@ -393,24 +428,41 @@ footer{
         text-align: center;
         width: 500px;
     }
+    /* blogGames-section style use here */
+    .blogGames-section{
+        padding: 0 25px;
+    }
+    .blog-image-area{
+        flex-direction: column;
+    }
+    .blog-item {
+        width: 300px;
+        margin: 0 auto;
+    }
+    .blog-photo{
+        width: 300px;
+    }
      /* gamesPlay-section here */
     .gamesPlay-section{
         flex-direction: column;
-        padding: 55px 28px 90px;
+        padding: 55px 28px 65px;
         gap: 55px;
     }
+    .gamesPlay-image-area{
+        padding: 0 50px;
+    }
     .gamesPlay-content{
-        width: 450px;
+        width: 560px;
         text-align: center;
     }
     .games-img {
-        width: 450px;
-        height: 550px;
+        width: 480px;
+        height: auto;
     }
     .image-badge img {
-        width: 180px;
-        top: 402px;
-        left: -58px;
+        width: 160px;
+        top: 347px;
+        left: -19px;
     }
     /* team-section style use here */
     .team-section{
