@@ -172,11 +172,49 @@ nav{
     gap:23px;
 }
 .blog-item{
-    width: 230px;
+    width: 100%;
+    max-width: 230px;
+    position: relative;
 }
 .blog-photo{
     width: 230px;
 }
+.overlay-style{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 74%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%);
+    border-radius: 10px;
+}
+.blog-item:hover .overlay-style{
+  opacity: 1;
+}
+.overlay-icon {
+    color: white;
+    font-size: 1.4rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.overlay-text{
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #ff29a2;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /* gamesPlay-section style use here */
 .gamesPlay-section{
     display: flex;
@@ -343,11 +381,17 @@ footer{
     }
     .blog-item {
         width: 290px;
-        margin: 0 auto;
+        height: 422px;
+        margin: 0 48px;
+    }
+    .overlay-style{
+        height: 80%;
+        width: 126%;
     }
     .blog-photo{
         width: 290px;
     }
+    
     /* gamesPlay-section here */
     .gamesPlay-section{
         flex-direction: column;
@@ -437,7 +481,12 @@ footer{
     }
     .blog-item {
         width: 300px;
+        height: 445px;
         margin: 0 auto;
+    }
+    .overlay-style{
+        height: 79%;
+        width: 130%;
     }
     .blog-photo{
         width: 300px;
