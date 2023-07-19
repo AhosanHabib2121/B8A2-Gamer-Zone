@@ -53,12 +53,12 @@ nav{
     align-items: center;
 
 }
-.logo-name > h2{
+.logo-name{
     color: #0B0223;
     font-size: 1.8rem;
     font-weight: 700;
 }
-.logo-part > .logo-photo{
+.logo-photo{
     width: 50px;
     margin-right: 10px;
 
@@ -188,9 +188,6 @@ nav{
 /* team-section style use here */
 .team-section{
     padding: 55px 180px 50px;
-    /* display: grid;
-    grid-template-columns: repeat(5,1fr); */
-    /* justify-content: center; */ 
     gap: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -216,6 +213,79 @@ nav{
 }
 .team-section img{
     width: 40px;
+}
+/* footer section style use here */
+footer{
+    background: #0B0223;
+    padding: 70px 0;
+}
+.footer-container{
+    width: 45%;
+    margin: 0 auto;
+}
+.footer-logo-part{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-logo-text{
+    color: #fff;
+}
+.footer-unoder-list{
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    justify-content: center;
+    margin-top: 20px;
+    gap: 5px;
+}
+.footer-unoder-list > li{
+    list-style: none;
+}
+.footer-unoder-list > li a{
+    text-decoration: none;
+    color: #ebebeb;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 5px;
+}
+.footer-unoder-list > li a:hover{
+    border: 1px solid #8585e7;
+    padding: 5px;
+    border-radius: 5px;
+}
+.icon-list{
+    display:grid;
+    grid-template-columns: repeat(4,50px);
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 5px;
+}
+.icon-list > li{
+    list-style: none;
+}
+.icon-list > li a{
+    text-decoration: none;
+}
+.footer-icon{
+    font-size: 25px;
+}
+.footer-oder-list{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 5px;
+}
+.footer-oder-list > li{
+    list-style: none;
+    color: #ffffff99;
+    font-size: 0.8rem;
+}
+.copyright-section{
+    color: #ffffff99;
+    font-size: 0.7rem;
+    text-align: center;
 }
 /* =============Responsive area here================= */
 /* ---Mobile device here-------- */
@@ -275,6 +345,23 @@ nav{
         gap: 5px;
         font-size: 0.5rem;
     }
+    /* footer section use here */
+    .footer-unoder-list {
+        grid-template-columns: repeat(3,100px);
+        gap: 26px;
+    }
+    .footer-oder-list{
+        grid-template-columns: repeat(2,100px);
+        gap: 15px;
+        padding-left: 50px;
+    }
+    .footer-oder-list > li{
+        font-size: 0.5rem;
+    }
+    .copyright-section{
+        padding: 0 24px;
+        font-size: 0.5rem;
+    }
 }
 /* ---Medium device here-------- */
 @media screen and (min-width:578px) and (max-width:960px) {
@@ -332,5 +419,18 @@ nav{
     }
     .team-section a{
         font-size: 0.8rem;
+    }
+    /* footer section use here */
+    .footer-unoder-list {
+        grid-template-columns: repeat(3,100px);
+        gap: 26px;
+    }
+    .footer-oder-list{
+        grid-template-columns: repeat(2,1fr);
+        gap: 15px;
+        padding-left: 70px;
+    }
+    .footer-oder-list > li{
+        font-size: 0.5rem;
     }
 }
