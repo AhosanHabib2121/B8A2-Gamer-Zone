@@ -17,13 +17,20 @@ body{
 /* primary btm here */
 .primary-btn{
     background-color: #ff29a2;
-    padding: 18px 38px;
+    padding: 16px 34px;
     color: #fff;
     border: 0;
     border-radius: 50px;
     text-transform: uppercase;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 600;
+}
+.primary-desc{
+    color: #534C64;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 25px;
+    margin: 20px 0;
 }
 /* single-text-color */
 .single-text-color{
@@ -121,6 +128,29 @@ nav{
 .banner-images > img{
     width: 400px;
 }
+/* feature section style use here */
+.feature-section{
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    padding: 55px 180px 55px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.feature-photo img{
+    width: 500px;
+}
+.feature-content{
+    text-align: right;
+}
+.feature-title{
+    font-size: 2.5rem;
+}
+.feature-some-text{
+    display: block;
+    color: #534C64;
+    font-size: 1rem;
+    font-weight: 700;
+}
 /* =============Responsive area here================= */
 /* ---Mobile device here-------- */
 @media screen and (max-width:578px) {
@@ -132,12 +162,24 @@ nav{
         flex-direction: column;
         width: 200px;
     }
+    /* banner section area here */
     .banner-section{
         flex-direction: column-reverse;
     }
     .banner-content{
         width: 400px;
         padding: 60px 0 26px 10px;
+    }
+    /* feature section area here */
+    .feature-section{
+        flex-direction: column;
+    }
+    .feature-photo img {
+        width: 400px;
+    }
+    .feature-content {
+        text-align: center;
+        width: 350px;
     }
 }
 /* ---Medium device here-------- */
@@ -150,6 +192,7 @@ nav{
         flex-direction: column;
         width: 200px;
     }
+    /* banner section area here */
     .banner-section{
         flex-direction: column-reverse;
     }
@@ -158,4 +201,16 @@ nav{
         padding: 60px 0 26px 10px;
         text-align: center;
     }
+    /* feature section area here */
+    .feature-section{
+        flex-direction: column;
+    }
+    .feature-photo img {
+        width: 500px;
+    }
+    .feature-content {
+        text-align: center;
+        width: 500px;
+    }
+
 }
