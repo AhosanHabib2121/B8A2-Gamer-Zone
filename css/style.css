@@ -100,11 +100,13 @@ nav{
     display: flex;
     gap: 50px;
     align-items: center;
+    background-image: url(../images/Group\ 14.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
 }
 .banner-content{
     width: 541px;
     padding: 65px 0 52px 10px;
-    background-image: url(../images/Group\ 14.png), linear-gradient(270deg, rgba(250, 240, 254, 0) 0%, rgba(174, 172, 172, 0) 100%);
 }
 .banner-sub-title{
     color: #0B0223;
@@ -360,6 +362,9 @@ footer{
     .banner-content{
         width: 400px;
         padding: 60px 0 26px 10px;
+        background-image: url(../images/Group\ 14.png);
+        background-size: 111%;
+        background-repeat: no-repeat;
     }
     /* feature section here */
     .feature-section{
@@ -460,6 +465,9 @@ footer{
         width: 550px;
         padding: 60px 0 26px 10px;
         text-align: center;
+        background-image: url(../images/Group\ 14.png);
+        background-size: 111%;
+        background-repeat: no-repeat;
     }
     /* feature section here */
     .feature-section{
