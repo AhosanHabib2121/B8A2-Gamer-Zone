@@ -1,0 +1,161 @@
+/* universal selector use here */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* --------------some common css style use full project start-------------- */
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+/* primary title color */
+.primary-title-color{
+    background: -webkit-linear-gradient(#F948B2, #8758F1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* primary btm here */
+.primary-btn{
+    background-color: #ff29a2;
+    padding: 18px 38px;
+    color: #fff;
+    border: 0;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+/* single-text-color */
+.single-text-color{
+    color: #ff29a2;
+}
+/* --------------some common css style use full project end-------------- */
+/* --header section style use here --*/
+/* nav section here */
+nav{
+    max-width: 1920px;
+    padding: 20px 180px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-part{
+    display: flex;
+    align-items: center;
+
+}
+.logo-name > h2{
+    color: #0B0223;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.logo-part > .logo-photo{
+    width: 50px;
+    margin-right: 10px;
+
+}
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.menu > li{
+    list-style: none;
+    padding: 12px;
+}
+.menu > li > a{
+    text-decoration: none;
+    color: #3C354F;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.menu > li:hover{
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    padding: 12px;
+    transition: 1s;
+}
+/* banner-section style ues here */
+.banner-section{
+    padding: 0 180px 0;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.banner-content{
+    width: 541px;
+    padding: 65px 0 52px 10px;
+    background-image: url(../images/Group\ 14.png), linear-gradient(270deg, rgba(250, 240, 254, 0) 0%, rgba(174, 172, 172, 0) 100%);
+}
+.banner-sub-title{
+    color: #0B0223;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.banner-title{
+    font-size: 3rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.banner-list{
+    margin-bottom: 26px;
+}
+.banner-list > li{
+    list-style: none;
+}
+.banner-list > li > a{
+    text-decoration: none;
+    color: #534C64;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 35px;
+}
+.single-btn-color{
+    margin-left: 15px;
+    background-color: #4EC5F7;
+}
+.banner-images > img{
+    width: 400px;
+}
+/* =============Responsive area here================= */
+/* ---Mobile device here-------- */
+@media screen and (max-width:578px) {
+    /* nav area here */
+    nav{
+        flex-direction: column;
+    }
+    .menu{
+        flex-direction: column;
+        width: 200px;
+    }
+    .banner-section{
+        flex-direction: column-reverse;
+    }
+    .banner-content{
+        width: 400px;
+        padding: 60px 0 26px 10px;
+    }
+}
+/* ---Medium device here-------- */
+@media screen and (min-width:578px) and (max-width:960px) {
+    /* nav area here */
+    nav{
+        flex-direction: column;
+    }
+    .menu{
+        flex-direction: column;
+        width: 200px;
+    }
+    .banner-section{
+        flex-direction: column-reverse;
+    }
+    .banner-content{
+        width: 550px;
+        padding: 60px 0 26px 10px;
+        text-align: center;
+    }
+}
