@@ -185,6 +185,38 @@ nav{
     top: 419px;
     left: -98px;
 }
+/* team-section style use here */
+.team-section{
+    padding: 55px 180px 50px;
+    /* display: grid;
+    grid-template-columns: repeat(5,1fr); */
+    /* justify-content: center; */ 
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.team-section a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #0B0223;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    background: #FFF;
+    padding: 5px 7px;
+}
+.team-section a:hover{
+    border: 1px solid #ff29a2;
+    padding: 5px 7px;
+    color: #ff29a2;
+}
+.team-section img{
+    width: 40px;
+}
 /* =============Responsive area here================= */
 /* ---Mobile device here-------- */
 @media screen and (max-width:578px) {
@@ -232,6 +264,16 @@ nav{
         width: 150px;
         top: 415px;
         left: -49px;
+    }
+    /* team-section style use here */
+    .team-section{
+        padding: 55px 10px 50px;
+        justify-content: center;
+        gap: 5px;
+    }
+    .team-section a{
+        gap: 5px;
+        font-size: 0.5rem;
     }
 }
 /* ---Medium device here-------- */
@@ -283,5 +325,12 @@ nav{
         top: 402px;
         left: -58px;
     }
-
+    /* team-section style use here */
+    .team-section{
+        padding: 55px 10px 50px;
+        justify-content:center;
+    }
+    .team-section a{
+        font-size: 0.8rem;
+    }
 }
