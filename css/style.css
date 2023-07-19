@@ -380,16 +380,16 @@ footer{
         flex-direction: column;
     }
     .blog-item {
-        width: 290px;
-        height: 422px;
-        margin: 0 48px;
+        width: 230px;
+        height: 338px;
+        margin: auto;
     }
     .overlay-style{
         height: 80%;
-        width: 126%;
+        width: 100%;
     }
     .blog-photo{
-        width: 290px;
+        width: 230px;
     }
     
     /* gamesPlay-section here */
@@ -477,19 +477,20 @@ footer{
         padding: 0 25px;
     }
     .blog-image-area{
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
     }
     .blog-item {
-        width: 300px;
-        height: 445px;
+        width: 230px;
+        height: 340px;
         margin: 0 auto;
     }
     .overlay-style{
         height: 79%;
-        width: 130%;
+        width: 100%;
     }
     .blog-photo{
-        width: 300px;
+        width: 230px;
     }
      /* gamesPlay-section here */
     .gamesPlay-section{
